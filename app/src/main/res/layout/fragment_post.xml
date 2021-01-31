@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/space_2x"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/post_image_width"
+        android:layout_height="@dimen/post_image_height"
+        android:contentDescription="@string/post"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_text"
+        android:elevation="@dimen/space_1x"
+        android:padding="@dimen/space_1x"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_2x"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/image"
+        app:layout_constraintEnd_toEndOf="@id/image"
+        app:layout_constraintStart_toStartOf="@+id/image"
+        tools:text="@string/text" />
+
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:layout_marginTop="@dimen/space_2x"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_shape_circle"
+        android:contentDescription="@string/next"
+        android:elevation="@dimen/space_0_5x"
+        android:src="@drawable/ic_next"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/prev"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <ImageButton
+        android:id="@+id/prev"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:layout_marginTop="@dimen/space_2x"
+        android:background="@drawable/button_shape_circle"
+        android:contentDescription="@string/back"
+        android:elevation="@dimen/space_0_5x"
+        android:src="@drawable/ic_back"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/next"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="@dimen/progress_size"
+        android:layout_height="@dimen/progress_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

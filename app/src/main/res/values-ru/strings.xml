@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Жизнь разработчика</string>
+    <string name="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+    <string name="error_text">Произошла ошибка при загрузке данных</string>
+    <string name="retry">Повторить</string>
+    <string name="post">Пост</string>
+    <string name="back">Назад</string>
+    <string name="next">Следующий</string>
+</resources>

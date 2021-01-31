@@ -4,4 +4,11 @@
     <dimen name="space_2x">16dp</dimen>
     <dimen name="space_1x">8dp</dimen>
     <dimen name="space_1_2x">10dp</dimen>
+    <dimen name="space_0_5x">4dp</dimen>
+    <dimen name="image_error_size">40dp</dimen>
+    <dimen name="button_size">50dp</dimen>
+    <dimen name="post_image_width">300dp</dimen>
+    <dimen name="post_image_height">400dp</dimen>
+    <dimen name="progress_size">40dp</dimen>
+
 </resources>

@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Devlife</string>
     <string name="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+    <string name="error_text">Error on loading. Try again</string>
+    <string name="retry">Retry</string>
+    <string name="post">post</string>
+    <string name="back">back</string>
+    <string name="next">next</string>
 </resources>
